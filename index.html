@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aniga & Vaisakh Wedding</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+background:#fff7f7;
+}
+
+.hero{
+height:100vh;
+background:#8b0000;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+border-radius:20px;
+font-size:18px;
+background:white;
+color:#8b0000;
+cursor:pointer;
+}
+
+.section{
+padding:50px 20px;
+}
+
+.names{
+font-size:36px;
+color:#8b0000;
+}
+
+.footer{
+background:#8b0000;
+color:white;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<h3 id="guest"></h3>
+
+<h1>Aniga ❤️ Vaisakh</h1>
+
+<p>Wedding Invitation</p>
+
+<button onclick="openInvite()">Open Invitation</button>
+
+</div>
+
+<div id="main" style="display:none">
+
+<div class="section">
+
+<p>Together with the blessings of our families</p>
+
+<div class="names">
+Aniga <br> & <br> Vaisakh
+</div>
+
+<p>invite you to celebrate their wedding</p>
+
+</div>
+
+<div class="section">
+
+<h2>Wedding Ceremony</h2>
+
+<p>18 May 2026</p>
+
+<p>Muhurtham: 10:30 AM – 11:30 AM</p>
+
+<p>Kavilummaram Temple, Koduvally</p>
+
+</div>
+
+<div class="section">
+
+<h3>Bride Parents</h3>
+<p>Bhaskaran & Sheeja</p>
+
+<h3>Groom Parents</h3>
+<p>Asokan & Vilasini</p>
+
+</div>
+
+<div class="footer">
+
+<p>We look forward to celebrating with you</p>
+
+</div>
+
+</div>
+
+<script>
+
+function openInvite(){
+document.querySelector(".hero").style.display="none";
+document.getElementById("main").style.display="block";
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+const guest = urlParams.get('to');
+
+if(guest){
+document.getElementById("guest").innerHTML = "Dear " + guest;
+}else{
+document.getElementById("guest").innerHTML = "Dear Guest";
+}
+
+</script>
+
+</body>
+</html>
