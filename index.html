@@ -1,15 +1,68 @@
-Wedding-Invitation
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── images
-│   ├── bride.jpg
-│   ├── groom.jpg
-│   └── qr.png
-│
-└── music
-    ├── sita_kalyana.mp3
-    └── walk_of_the_bride.mp3
+<!DOCTYPE html>
+<html>
+<head>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Aniga ❤️ Vaisakh Wedding</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="welcome">
+
+<h1>Aniga ❤️ Vaisakh</h1>
+<h2>Wedding Invitation</h2>
+
+<p id="guest"></p>
+
+<button onclick="openInvite()">Open Invitation</button>
+
+</div>
+
+
+<div class="main" id="main">
+
+<h2>We Are Getting Married</h2>
+
+<div class="photos">
+
+<img src="images/bride.jpg">
+<img src="images/groom.jpg">
+
+</div>
+
+<h3>Date</h3>
+<p>18 May 2026</p>
+
+<h3>Time</h3>
+<p>10:00 AM</p>
+
+<h3>Venue</h3>
+<p>Omassery, Kozhikode</p>
+
+<iframe
+src="https://maps.google.com/maps?q=Omassery&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="300"
+height="250">
+</iframe>
+
+<h3>Wedding Countdown</h3>
+
+<div id="countdown"></div>
+
+</div>
+
+<audio autoplay loop>
+
+<source src="music/song.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
