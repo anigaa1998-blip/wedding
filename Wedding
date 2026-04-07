@@ -1,0 +1,14 @@
+Wedding-Invitation
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── images
+│   ├── bride.jpg
+│   ├── groom.jpg
+│   └── qr.png
+│
+└── music
+    ├── sita_kalyana.mp3
+    └── walk_of_the_bride.mp3
